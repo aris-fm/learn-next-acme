@@ -13,7 +13,7 @@ import { authenticate } from "@/app/lib/actions";
 export default function LoginForm() {
   const [errorMessage, formAction, isPending] = useActionState(
     authenticate,
-    undefined
+    undefined,
   );
 
   return (
